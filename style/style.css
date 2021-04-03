@@ -328,7 +328,7 @@ section {
 }
 .fullscreen__arrow {
   position: absolute;
-  top: 97%;
+  top: 94vh;
   left:50%;
   transform:translate(-50%, -50%);  
 }
