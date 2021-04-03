@@ -1342,6 +1342,10 @@ line-height: 40px;
 	background: url("../images/media/email.svg") no-repeat;
 	padding: 2px 23px;
 }
+#map {
+	width: 100%;
+	height: 350px;
+}
 @media (max-width: 767px) {
 	.contact__map__body {
 		width: 100%;
