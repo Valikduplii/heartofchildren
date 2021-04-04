@@ -3,6 +3,16 @@ $(document).ready(function(){
       $('.header__burger, .header__menu').toggleClass('active');
       $('body').toggleClass('lock');
    })
+      jQuery(function($) {
+         $(window).scroll(function(){
+         if($(this).scrollTop()>800){
+         $('.trailer').removeClass('fixed-on');
+         }
+         else if ($(this).scrollTop()<885){
+         $('.trailer').addClass('fixed-on');
+         }
+         });
+     });
    if ($('.news__slider').length > 0) {
       $('.news__slider').slick({
          easing: 'ease',
@@ -33,6 +43,73 @@ $(document).ready(function(){
       //    $(".big-img").attr("src", $(this).attr("src"));
       // });
    }
+   if ($('.help__slider').length > 0) {
+      $('.help__slider').slick({
+         easing: 'ease',
+         autoplay: false,
+         dots: true,
+         slidesToShow: 2,
+         autoplaySpeed: 10000,
+         rows: 1,
+         variableWidth: true,
+         pauseOnFocus: true,
+         pauseOnHover: true,
+         slidesToScroll: 1,
+         infinite: false,
+         adaptiveHeight: false,
+         responsive: [
+            {
+               breakpoint: 775,
+               settings: {
+                  slidesToShow: 3,
+               }
+            },
+         ],
+      });
+   }
+   if ($('.partners__slider').length > 0) {
+      $('.partners__slider').slick({
+         easing: 'ease',
+         autoplay: true,
+         dots: false,
+         arrows: false,
+         slidesToShow: 4,
+         autoplaySpeed: 1000,
+         rows: 1,
+         centerMode: false,
+         variableWidth: false,
+         slidesToScroll: 1,
+         infinite: true,
+         adaptiveHeight: true,
+         responsive: [
+            {
+               breakpoint: 1280,
+               settings: {
+                  slidesToShow: 3,
+               }
+            },
+            {
+               breakpoint: 1000,
+               settings: {
+                  slidesToShow: 3,
+               }
+            },
+            {
+               breakpoint: 768,
+               settings: {
+                  slidesToShow: 2,
+               }
+            },
+            {
+               breakpoint: 480,
+               settings: {
+                  slidesToShow: 1,
+                  centerMode: true,
+               }
+            },
+         ],
+      });
+}
    function map(n){
       google.maps.Map.prototype.setCenterWithOffset= function(latlng, offsetX, offsetY) {
          var map = this;
