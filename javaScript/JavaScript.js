@@ -51,7 +51,7 @@ $(document).ready(function(){
          slidesToShow: 2,
          autoplaySpeed: 10000,
          rows: 1,
-         variableWidth: true,
+        
          pauseOnFocus: true,
          pauseOnHover: true,
          slidesToScroll: 1,
@@ -61,6 +61,7 @@ $(document).ready(function(){
             {
                breakpoint: 775,
                settings: {
+                  variableWidth: true,
                   slidesToShow: 3,
                }
             },
