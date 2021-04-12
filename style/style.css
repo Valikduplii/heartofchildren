@@ -73,6 +73,16 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+._anim-show {
+	transform: translate(0px, -120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+  }
+  ._anim-show._active,
+  ._active ._anim-show {
+	transform: translate(0px, 0px);
+	opacity: 1;
+  }
 section {
 	background-color: #fff;
 }
@@ -312,9 +322,19 @@ main {
 .fullscreen__link {
   align-self: center;
   position: absolute;
-  top: 85vh;
+  bottom: 152px;
   left:50%;
   transform:translate(-50%, -50%);  
+}
+@media(max-height: 800px) {
+	.fullscreen__link {
+		bottom: 100px;
+	}
+}
+@media(max-height: 600px) {
+	.fullscreen__link {
+		bottom: 50px;
+	}
 }
 .btn {
   text-align: center;
@@ -331,7 +351,7 @@ main {
 }
 .fullscreen__arrow {
   position: absolute;
-  bottom: 1vh;
+  bottom: 0px;
   left:50%;
   transform:translate(-50%, -50%);  
 }
@@ -396,6 +416,8 @@ main {
 	padding: 120px 0px 70px 0px;
 }
 .organization__block {
+	transform:translate( 120%, 0%);
+
 	position: relative;
 	left: 355px;
 	width: 520px;
@@ -404,6 +426,10 @@ main {
 	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
 	background: #FFFFFF;
 	padding: 30px 47px;
+}
+.organization__block._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
 }
 .organization__block__title {
 	font-style: normal;
@@ -550,6 +576,11 @@ main {
 }
 .mission__text {
 	width: 44%;
+	transform:translate( -120%, 0%);
+}
+.mission__text._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
 }
 .mission__text__title {
 	font-style: normal;
@@ -570,6 +601,13 @@ main {
 	display: flex;
 	width: 432px;
     justify-content: space-around;
+}
+.mission__icons {
+	transform:translate( 120%, 0%);
+}
+.mission__icons._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
 }
 .mission__icons__icon {
 	font-style: normal;
@@ -705,6 +743,7 @@ main {
 		padding: 0px 10px;
 	}
 }
+/* achivement */
 .achievement {
 	position: relative;
 	height: 755px;
@@ -772,6 +811,55 @@ line-height: 20px;
 	top: 205px;
     left: 304px;
 }
+
+.achievement__item_01 {
+	transform:translate( -120%, 0%);
+}
+.achievement__item_01._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
+}
+
+.achievement__item_02 {
+	transform:translate( -120%, 0%);
+}
+.achievement__item_02._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
+}
+
+.achievement__item_03 {
+	opacity: 0%;
+}
+.achievement__item_03._active {
+	transition: all 1s ease 0s;
+	opacity: 100%;
+}
+
+.achievement__item_04 {
+	transform:translate( 120%, 0%);
+}
+.achievement__item_04._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
+}
+
+.achievement__item_05 {
+	transform:translate( 120%, 0%);
+}
+.achievement__item_05._active {
+	transition: all 1s ease 0s;
+	transform:translate( 0%, 0%);
+}
+
+.achievement__item_06 {
+	opacity: 0%;
+}
+.achievement__item_06._active {
+	transition: all 1s ease 0s;
+	opacity: 100%;
+}
+
 @media(max-width: 1000px) { 
 	.achievement__item_05 {
 		left: 573px;
@@ -1106,6 +1194,13 @@ float: right;
 	width: 630px;
 	margin: 0 auto;
 }
+.lineTeam__content { 
+	opacity: 0;
+}
+.lineTeam__content._active {
+	transition: all 1s ease 0s;
+	opacity: 100%;
+}
 .lineTeam__content__title {
 	font-style: normal;
 font-weight: bold;
@@ -1404,6 +1499,20 @@ line-height: 20px;
 .team__row .team__item:first-child {
 	margin-bottom: 30px;
 }
+.team__row:first-child { 
+	transform: translate( -120%, 0%);
+}
+.team__row:first-child._active {
+	transition: all 1s ease 0s;
+	transform: translate( 0%, 0%);
+}
+.team__row { 
+	transform: translate( 120%, 0%);
+}
+.team__row._active {
+	transition: all 1s ease 0s;
+	transform: translate( 0%, 0%);
+}
 .team__item {
 	width: 425px;
 	display: flex;
@@ -1581,6 +1690,11 @@ margin-bottom: 10px;
 .contact__info__body {
 	color: #333;
 	padding: 20px 0px 0px 53px;
+	transform: translate( 120%, 0%);
+}
+.contact__info__body._active {
+	transition: all 1s ease 0s;
+	transform: translate( 0%, 0%);
 }
 .contact__info__body__title {
 	text-align: center;
