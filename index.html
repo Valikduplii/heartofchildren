@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Серце дітям України</title>
+    <title>Про нас - Серце дітям України</title>
 </head>
 <body>
     <div class="wrapper">
@@ -18,22 +18,22 @@
 					<nav class="header__menu">
 						<ul class="header__list">
 							<li>
-								<a href="https://valikduplii.github.io/project/" class="header__link">Проєкти</a>
+								<a href="" class="header__link">Проєкти</a>
 							</li>
 							<li>
-								<a href="https://valikduplii.github.io/Archiv/" class="header__link">Архів</a>
+								<a href="" class="header__link">Архів</a>
 							</li>
 							<li>
-								<a href="https://valikduplii.github.io/zvit/" class="header__link">Звіти</a>
+								<a href="" class="header__link">Звіти</a>
 							</li>
 							<li>
-								<a href="https://valikduplii.github.io/news/" class="header__link">Новини</a>
+								<a href="" class="header__link">Новини</a>
 							</li>
 							<li>
-								<a href="https://valikduplii.github.io/aboutUs/" class="header__link">Про нас</a>
+								<a href="" class="header__link active	">Про нас</a>
 							</li>
 							<li>
-								<a href="https://valikduplii.github.io/LEAP/" class="header__link">LEAP</a>
+								<a href="" class="header__link">LEAP</a>
 							</li>
 						</ul>
 					</nav>
@@ -44,90 +44,168 @@
 			</div>
 		</header>
         <main>
-			<section class="fullscreen fullscreen_bg ">
-            	<div class="fullscreen__body">
-            	        <h1 class="fullscreen__title">Стань частиною чогось масштабного  - <span>Разом можливо більше <span></h1>
-            	        <a href="" class="fullscreen__link btn">Пожертвувати</a>
-            	        <div class="fullscreen__arrow"><img src="images/arrow down.png" alt=""></div>
-            	</div>
-				<div id="trailer" class="is_overlay trailer">
-						<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted>
-							<source src="video.mp4"></source>
-							<source src="video.webm" type="video/webm"></source>
-						</video>
-				</div>
-			</section>
-			<section class="organization">
+			<section class="video">
 				<div class="container">
-					<div class="organization__circles">
-						<img src="images/circle/Ellipse 2.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 6.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 7.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 8.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 5.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 3.svg" alt="" srcset="">
-						<img src="images/circle/Ellipse 4.svg" alt="" srcset="">
+					<div class="circles">
+						<img src="images/circle/01red.svg" alt="" class="video__circles_01  _anim-items _anim-no-hide" srcset="">
+						<img src="images/circle/02orange.svg" alt="" class="video__circles_02  _anim-items _anim-no-hide" srcset="">
 					</div>
-					<div class="organization__block _anim-items _anim-no-hide">
-						<div class="organization__block__title">Про організацію </div>
-						<div class="organization__block__text">«Серце дітям України» виступає за добробут кожної людини у сфері охорони здоров’я, фокусуючись на громаді Рівненщини. Ми підтримуємо лікарні та спеціалізовані заклади, проводячи там ремонтні роботи та закуповуючи необхідне медичне обладнання, а також надаємо адресну допомогу населенню через фінансування дороговартісних операцій і реабілітацій та придбання ліків. </div>
+					<div class="video_content" >
+						<video Pause id="myPlayer" src="video.mp4"><source src="video.mp4" type="video/mp4"></source></video>
+						<button id="btnPlay" class="video__play" ><img src="images/video/play.svg" alt="">	<span class="video__circles"></span></button> 
 					</div>
 				</div>
 			</section>
-			<section class="mission">
+			<section class="aboutUs">
 				<div class="container">
-					<div class="mission__text _anim-items _anim-no-hide">
-						<div class="mission__text__title">Наша місія</div>
-						<div class="mission__text__text">Наша місія - через 20 років кожна людина у нашій громаді отримує якісні та доступні медичні послуги, де життя пацієнта є найвищою цінністю, а лікарі та лікарні повністю забезпечені усім необхідним для виконання своїх функцій.</div>
-					</div>
-					<div class="mission__icons _anim-items _anim-no-hide">
-						<div class="mission__icons__row">
-							<a href="http://"><div class="mission__icons__icon mission__icons__icon_01">Медичне обладнання</div></a>
-							<a href="http://"><div class="mission__icons__icon mission__icons__icon_03">Ремонтні роботи</div></a>
+					<div class="aboutUs__content">
+						<div class="aboutUs__content__about _anim-items _anim-no-hide">
+							<div class="aboutUs__content__about__title">Про нас</div>
+							<div class="aboutUs__content__about__text">
+								Вже понад 10 років веде благодійну діяльність на Рівненщині. Наша команда працює над забезпеченням потреб лікарень, сиротинці та спеціалізованих закладів, проводить навчання для лікарів та організовує освітні проекти для молоді. 
+								Ми віримо, що системні та сталі проекти, які комплексно змінюють підхід до охорони здоров’я в Україні, здатні забезпечити громадян якісними та доступними медичними послугами. Саме тому головний фокус організації – придбання дороговартісного обладнання та проведення ремонтних робіт у лікарнях та медичних закладах. 
+								Наша команда переконана, що так ми маємо змогу не лише допомогти більшій кількості людей, а й покращити умови роботи медперсоналу та сприяти розвитку медичних закладів та медицини вцілому. 
+								</div>
 						</div>
-						<div class="mission__icons__row">
-							<a href="http://"><div class="mission__icons__icon mission__icons__icon_02">Адресна допомога</div></a>
-							<a href="http://"><div class="mission__icons__icon mission__icons__icon_04">Молодіжні проекти</div></a>
+						<div class="aboutUs__content__achievement _anim-items _anim-no-hide">
+							<div class="aboutUs__content__achievement__title">Досягнення</div>
+							<div class="aboutUs__content__achievement__item">
+								<div class="aboutUs__content__achievement__item__title">80 дітей</div>
+								<div class="aboutUs__content__achievement__item__text">отримали адресну допомогу</div>
+							</div>
+							<div class="aboutUs__content__achievement__item">
+								<div class="aboutUs__content__achievement__item__title">4 млн 300 тисяч грн</div>
+								<div class="aboutUs__content__achievement__item__text">витрачено на придбання обладнання для лікарень Рівненщини</div>
+							</div>
+							<div class="aboutUs__content__achievement__item">
+								<div class="aboutUs__content__achievement__item__title">5 млн грн</div>
+								<div class="aboutUs__content__achievement__item__text">Потрачено проведено ремонтних робіт у лікарнях та спеціалізованих закладах Рівненщини</div>
+							</div>
+							<div class="aboutUs__content__achievement__item">
+								<div class="aboutUs__content__achievement__item__title">1 млн 671 тис грн</div>
+								<div class="aboutUs__content__achievement__item__text">зекономлено за рахунок міжнародної волонтерської допомоги для лікування дітей.
+								</div>
+							</div>
+							<div class="aboutUs__content__achievement__item">
+								<div class="aboutUs__content__achievement__item__title">5 освітніх таборів </div>
+								<div class="aboutUs__content__achievement__item__text">Проведено для молоді у Рівному</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="achievement">
 				<div class="container">
-					<div class="achievement__item achievement__item_01  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/medecineCase.svg"></img>
-						<div class="achievement__item__title"><span>550</span>тисяч грн</div>
-						<div class="achievement__item__text">80 дітей отримали адресну допомогу</div>
+					<div class="circles">
+						<img src="images/circle/03green.svg" alt="" class="achievement__circles_01  _anim-items _anim-no-hide"srcset="">
+						<img src="images/circle/04green.svg" alt="" class="achievement__circles_02 _anim-items _anim-no-hide" srcset="">
+						<img src="images/circle/05blue.svg" alt="" class="achievement__circles_03 _anim-items _anim-no-hide" srcset="">
 					</div>
-					<div class="achievement__item achievement__item_02  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/camp.svg"></img>
-						<div class="achievement__item__title"><span>5</span>таборів</div>
-						<div class="achievement__item__text">освітніх таборів для молоді у Рівному</div>
+					<div class="achievement__title">Наші ціннсоті</div>
+					<div class="achievement__body">
+						<div class="achievement__body__item _anim-items _anim-no-hide">
+							<div class="achievement__body__item__image">
+								<img src="images/values/01.svg" alt="">
+							</div>
+							<div class="achievement__body__item__title">Співпраця</div>
+							<div class="achievement__body__item__text">завжди готові підтримати 
+								у міру своїх сил
+								та можливостей, а також відкриті до співпраці усіма зацікавленими сторонами.
+								</div>
+						</div>
+						<div class="achievement__body__item _anim-items _anim-no-hide">
+							<div class="achievement__body__item__image">
+								<img src="images/values/02.svg" alt="">
+							</div>
+							<div class="achievement__body__item__title">Безперервний
+								розвиток</div>
+							<div class="achievement__body__item__text">завжди шукаємо можливості для експериментів та нових викликів, що допомагають нам рости
+								Відповідальність перед суспільством – існуємо завдяки суспільству та працюємо доки є потреба у нашій діяльності.								
+								</div>
+						</div>
+						<div class="achievement__body__item _anim-items _anim-no-hide">
+							<div class="achievement__body__item__image">
+								<img src="images/values/03.svg" alt="">
+							</div>
+							<div class="achievement__body__item__title">Любов до людей</div>
+							<div class="achievement__body__item__text">Все, що ми робимо, спрямоване на покращення життя наших громадян.
+								</div>
+						</div>
+						<div class="achievement__body__item _anim-items _anim-no-hide">
+							<div class="achievement__body__item__image">
+								<img src="images/values/04.svg" alt="">
+							</div>
+							<div class="achievement__body__item__title">Прозорість</div>
+							<div class="achievement__body__item__text">Кожен благодійник має доступ до звітів організації та має право отримати відповідь на питання «як були використані його кошти».
+								</div>
+						</div>
+						<div class="achievement__body__item _anim-items _anim-no-hide">
+							<div class="achievement__body__item__image">
+								<img src="images/values/05.svg" alt="">
+							</div>
+							<div class="achievement__body__item__title">Відкритість</div>
+							<div class="achievement__body__item__text">Завжди поруч, щоб вислухати будь-кого та разом знайти рішення.
+								</div>
+						</div>
 					</div>
-					<div class="achievement__item achievement__item_03  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/medecinePlan.svg"></img>
-						<div class="achievement__item__title"><span>1</span> млн <span>671</span> тисяч грн</div>
-						<div class="achievement__item__text">надано міжнародної волонтерської допомоги для лікування дітей.</div>
+				</div>
+			</section>
+			<section class="history">
+				<div class="container">
+					<div class="history__content _anim-items _anim-no-hide">
+					<div class="history__content__title">Історія “Серце дітям України”</div>
+					<div class="history__content__text">
+						<p>Діяльність «Серце дітям України» розпочалася у 2009 році з допомоги маленькій дівчинці Даринки Луцик. Тоді ми допомогли придбати спецzіальний велосипед для розвитку ніжок і це був наш перший проект, який надихнув спробувати робити більше для нашої громади.</p>
+						<p>
+							6 травня 2009 року ми зареєструвалися як Рівненська Обласна Членська Благодійна Організація «Серце дітям України» і одразу в нас з’явився постійний партнер і друг Волтер Брюггер - президент міжнародної асоціації «Herz fur Kinder.CH» (Швейцарія), який до сьогоднішнього дня виступає найбільш спонсором організації та допомагає втілювати переважну більшість наших проектів.
+							</p>
+						<p>
+							У свої діяльності ми сфокусувалися на чотирьох головних напрямках – ремонт лікарень та спеціалізованих закладів, придбання медичного обладнання, адресна допомога важкохворим діткам та молодіжна просвітницька діяльність. </p>
+						<p>На початку роботи ми допомагали збирати кошти виключно на лікування дітей, але поступово почали співпрацювати з інтернатами, спеціалізованими реабілітаційними центрами, дитячими лікарнями. Направду, в нашій роботі досить часто виникають труднощі: нестача фінансів, фізичних та духовних сил на все, підкрадається страшенна втома. Та завдяки нашим друзям ми продовжуємо діяти.</p>
+						<p>
+							З 2014, разом з іншими благодійними та громадськими організаціями, ми почали боротися за зміни в Рівненській обласній дитячій лікарні. На даний момент наша організація є учасником Наглядової Ради Рівненської обласної дитячої лікарні. 
+							</p>
+						<p>Крім того, з 2014 року ми активно проводимо ремонти у лікарнях та закупляємо необхідне медичне обладнання. Саме ці 2 напрямки діяльності потребують найбільших фінансових витрат. Майже 10 мільйонів гривень вдалося залучити організації на потреби лікарень та спеціалізованих закладів протягом останніх 7 років.</p>
+						<p> 
+							Також, з 2017 року разом з іншими благодійними організаціями, РОЧБО «Серце дітям України» сприяла прийняттю законодавства про дитячу паліативну медицину в Україні, а також ініціювала створення та провела ремонт першого дитячого паліативного відділення в Рівненській області на базі КЗ «Рівненський спеціалізований будинок дитини», а вже у 2020 році розпочала ремонт в Обласному паліативному відділенні КНП «Дядьковицька районна лікарня». У рамках проектної діяльності, до придбання обладнання «Серце діями України» вдалося залучити до співпраці Посольство Японії в Україні та Міжнародного фонду Відродження, які профінансували купівлю життєво необхідного обладнання у 2020 році.</p>
+						<p>Крім того, у 2018 році організація почала підтримувати молодіжні проекти, ініційовані молодими волонтерами організації. Протягом останніх 2 років ми змогли втілити 5 освітніх таборів для підлітків у Рівному, провести 3 тренінги для розвитку волонтерської активності у місті та запустити довготривалий проект «Тест-драйв професій» для старшокласників. У рамках молодіжної діяльності нашим партнером стала американська урядова організація «Корпус Миру США в Україні».
+							Діяльність, яку ми вже здійснюємо вже з десяток років поспіль, постійно потребує Вашої підтримки. Ми завжди раді отримувати пожертви від нових друзів. Тому гортайте список активних проектів та допомагайте вже зараз! Ті кошти, які надходять без цільового призначення будуть розподілені виключно на статутну діяльність, особливо на термінову допомогу у лікуванні дітей, коли ми не встигаємо навіть зробити проект і коли фінанси потрібні «на вчора». Ваші кошти ми не використовуємо на оплату оренди офісу та заробітні плати (хоча по законодавству можемо використовувати 20% від надходжень), оскільки організація має постійного спонсора, який взяв на себе ці витрати. 
+							</p>
 					</div>
-					<div class="achievement__item achievement__item_04  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/repair.svg"></img>
-						<div class="achievement__item__title"><span>5</span>млн грн</div>
-						<div class="achievement__item__text">проведено ремонтних робіт у лікарнях та спеціалізованих закладах Рівненщини</div>
 					</div>
-					<div class="achievement__item achievement__item_05  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/medecineChair.svg"></img>
-						<div class="achievement__item__title"><span>4</span> млн <span>300</span> тисяч грн</div>
-						<div class="achievement__item__text">придбано обладнання для лікарень Рівненщини</div>
-					</div>
-					<div class="achievement__item achievement__item_06  _anim-items _anim-no-hide">
-						<img class="achievement__item__image" src="images/achievement/heart.svg"></img>
-						<div class="achievement__item__title"><span>11 </span>років</div>
-						<div class="achievement__item__text">роботи на Рівненщині</div>
+				</div>
+			</section>
+			<section class="documents">
+				<div class="container">
+					<div class="documents__body">
+						<ul id="tabs">
+							<li><a href="#" title="tab1">Звіти</a></li>
+							<li><a href="#" title="tab2">Статутні документи</a></li>
+						</ul>
+						<div id="content">
+							<div id="tab1">
+								<p class="documents__body__item">
+									<a href="" class="documents__body__item__text">Публічний звіт 2020</a>
+									<a href="" class="documents__body__item__text">Публічний звіт 2019</a>
+									<a href="" class="documents__body__item__text">Публічний звіт 2018</a>
+									<a href="" class="documents__body__item__text">Публічний звіт 2017</a>
+									<a href="" class="documents__body__item__text">Публічний звіт 2016</a>
+									<a href="" class="documents__body__item__text">Публічний звіт 2015</a>
+								</p>
+							</div>
+							<div id="tab2"><ul class="documents__body__item">
+								<a href=""><li class="documents__body__item__text"> звіт 2020</li></a>
+								<a href=""><li class="documents__body__item__text"> звіт 2019</li></a>
+								<a href=""><li class="documents__body__item__text"> звіт 2018</li></a>
+								<a href=""><li class="documents__body__item__text"> звіт 2017</li></a>
+							</ul></div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="news">
-				<div class="news__bg"></div>
+				<div class="news__bg">
+				</div>
 				<div class="container">
 					<div class="news__slider">
 						<a href="" class="news__slider__item">
@@ -317,105 +395,6 @@
 					<a href="" class="help__show">Показати всі</a>
 				</div>
 			</section>
-			<section class="lineTeam">
-				<div class="lineTeam__bg">
-					<div class="container">
-						<div class="lineTeam__content _anim-items _anim-no-hide">
-							<div class="lineTeam__content__title"><span>Наша</span>команда</div>
-							<div class="lineTeam__content__text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="team">
-				<div class="container">
-					<div class="team__column">
-					<div class="team__row  _anim-items _anim-no-hide">
-						<div class="team__item">
-							<div class="team__item__photo">
-								<img src="images/team/01.jpg" alt="" srcset="">
-							</div>
-							<div class="team__item__content">
-								<div class="team__item__content__info">
-									<div class="team__item__content__info__title">Кідрук Тетяна</div>
-									<div class="team__item__content__info__subtitle">Голова правління</div>
-								</div>
-								<div class="team__item__content__contact">
-									<div class="team__item__content__contact__number">+38 063 9951389</div>
-									<div class="team__item__content__contact__email">tetiana.kidruk@gmail.com</div>
-								</div>
-							</div>
-						</div>
-						<div class="team__item">
-							<div class="team__item__photo">
-								<img src="images/team/02.jpg" alt="" srcset="">
-							</div>
-							<div class="team__item__content">
-								<div class="team__item__content__info">
-									<div class="team__item__content__info__title">Харчук Тетяна </div>
-									<div class="team__item__content__info__subtitle">Головний бухгалтер</div>
-								</div>
-								<div class="team__item__content__contact">
-									<div class="team__item__content__contact__number">+38 068 0158486</div>
-									<div class="team__item__content__contact__email">tanyakharchuk@ukr.net</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="team__row _anim-items _anim-no-hide">
-						<div class="team__item">
-							<div class="team__item__photo">
-								<img src="images/team/03.jpg" alt="" srcset="">
-							</div>
-							<div class="team__item__content">
-								<div class="team__item__content__info">
-									<div class="team__item__content__info__title">Бачук Олександр</div>
-									<div class="team__item__content__info__subtitle">Заступник голови правління</div>
-								</div>
-								<div class="team__item__content__contact">
-									<div class="team__item__content__contact__number">+38 096 2629002</div>
-									<div class="team__item__content__contact__email">alexander.bachuk@gmail.com</div>
-								</div>
-							</div>
-						</div>
-						<div class="team__item">
-							<div class="team__item__photo">
-								<img src="images/team/04.jpg" alt="" srcset="">
-							</div>
-							<div class="team__item__content">
-								<div class="team__item__content__info">
-									<div class="team__item__content__info__title">Удодік Тетяна </div>
-									<div class="team__item__content__info__subtitle">Офіс-адміністратор</div>
-								</div>
-								<div class="team__item__content__contact">
-									<div class="team__item__content__contact__number">+38 067 2557527</div>
-									<div class="team__item__content__contact__email">Tanya.sdu@gmail.com</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</section>
-			<section class="contact">
-				<div class="contact__map">
-					<div class="contact__map__body ibg">
-						<div class="map__body ibg">
-							<div id="map" class="map"></div>
-						</div>
-					</div>
-					<div class="contact__info">
-						<div class="contact__info__body _anim-items _anim-no-hide">
-							<div class="contact__info__body__title">Контакти</div>
-							<ul>
-								<li class="contact__info__body__text contact__info__body__text_01">Серце дітям україни</li>
-								<li class="contact__info__body__text contact__info__body__text_02">+38 063 9951389</li>
-								<li class="contact__info__body__text contact__info__body__text_03">hearts.for.children.ua@gmail.com</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
 			<section class="partners">
 				<div class="container">
 					<div class="partners__title">Наші партнери</div>
@@ -444,31 +423,6 @@
 					</div>
 				</div>
 			</section>
-			<a href="#popup" id="popup__toggle" class="popup-link" onclick="return false;">
-				<div class="circlephone" style="transform-origin: center;"></div>
-				<div class="circle-fill" style="transform-origin: center;"></div>
-				<div class="img-circle" style="transform-origin: center;">
-					<div class="img-circleblock" style="transform-origin: center;"></div>
-				</div>
-			</a>
-			<div id="popup" class="popup">
-				<div class="popup__body">
-				   <div class="popup__content">
-					  <div class="popup__cont">
-						 <a href="#header" class="popup__close close-popup"></a>
-							<div class="popup-form__icon"></div>
-						 <div class="popup-form__form">
-							<div class="popup-form__item">
-							   <label class="popup-form__text">Номер телефону:</label>
-							   <input type="text" placeholder="+380 96 747 3245" />
-								<div class="popup-form__undertext">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв</div>
-							</div>
-							<button class="popup-form__button">Надіслати</button>
-						 </div>
-					  </div>
-				   </div>
-				</div>
-			 </div>
         </main>
 		<footer class="footer">
 			<div class="container">
